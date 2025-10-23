@@ -1,8 +1,8 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GenerativeModel, GoogleGenerativeAI } from '@google/generative-ai';
 
 export class GeminiApiService {
     private genAI: GoogleGenerativeAI;
-    private model: any;
+    private model: GenerativeModel;
 
     constructor(apiKey: string) {
         this.genAI = new GoogleGenerativeAI(apiKey);
