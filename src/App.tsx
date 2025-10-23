@@ -56,6 +56,7 @@ function App() {
           isLoading={isLoading}
           onSourceTextChange={setSourceText}
           onClearTexts={clearTexts}
+          onTranslate={translateText}
         />
         
         <ErrorMessage error={error} />
